@@ -3,10 +3,11 @@ package com.company.lee.dao.pojo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class Emp {
+public class Emp implements Serializable {
     private Integer empno;
 
     private String ename;
