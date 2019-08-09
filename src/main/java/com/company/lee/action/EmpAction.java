@@ -23,7 +23,7 @@ public class EmpAction {
         return new ResponseResult<Emp>(code, msg);
     }
 
-    @RequestMapping(value = "emp/{empno}", method = RequestMethod.PUT)
+    @RequestMapping(value = "emp/{empno}", method = RequestMethod.POST)
     public @ResponseBody
     ResponseResult<Emp> update(Emp emp) {
         String msg = empService.update(emp);
